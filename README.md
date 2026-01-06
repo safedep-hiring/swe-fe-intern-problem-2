@@ -15,11 +15,21 @@ The application should show details about an Open Source package at URL:
 - `https://localhost:3000/p/{ecosystem}/{name}/{version}`
 - Example URL: `https://localhost:3000/p/npm/nextjs/15.5.4`
 
+The application must use:
+
+- Nextjs 16.x
+- Nextjs Server Actions (for fetching data about open source packages)
+- Typescript
+- Tailwind CSS
+- Shadcn UI
+
 For fetching data about open source packages, you will need to access SafeDep API. 
 Sign-up for a free account at [app.safedep.io](https://app.safedep.io) to get an API key (refer to `Settings > API Keys`)
 
 - Tenant ID (format: `<team>-<org>.safedep.io`)
 - API Key
+
+**Note:** Alternatively, you can sign-up using [vet](https://github.com/safedep/vet) from CLI by running `vet cloud quickstart` to obtain your `TenantID` and `API Key`.
 
 Using `TenantID` and `API Key`, you can access SafeDep API to fetch the required data
 about open source packages.
